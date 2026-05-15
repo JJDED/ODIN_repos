@@ -1,3 +1,6 @@
 [submodule "ODIN-recipes"]
 	path = ODIN-recipes
 	url = https://github.com/JJDED/ODIN-recipes.git
+[submodule "css-exercises"]
+	path = css-exercises
+	url = https://github.com/JJDED/css-exercises.git
