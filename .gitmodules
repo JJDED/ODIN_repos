@@ -4,3 +4,6 @@
 [submodule "css-exercises"]
 	path = css-exercises
 	url = https://github.com/JJDED/css-exercises.git
+[submodule "odin-landing-page"]
+	path = odin-landing-page
+	url = https://github.com/JJDED/odin-landing-page.git
