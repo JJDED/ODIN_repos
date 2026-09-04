@@ -149,21 +149,31 @@ function lastLetter(lastLet) {
 
 console.log(lastLetter("abcd"));
 
-// Fizz Buzz
 
-let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
-
-// tæl op til det ønskede nummer. i er nummeret vi starter på. i <= answer; er det mål vi gerne vil nå, dvs. vi vil gerne loope indtil i er større end answer. i++ siger at vores loop skal gå op for hver iteration. 
-for (let i = 1; i <= answer; i++) { // let i = 1; betydeer at i er 1. 
-    if (i % 3 === 0 && i % 5 === 0) {
-        console.log("FizzBuzz");
-    } else if (i % 3 === 0) {
-        console.log("Fizz");
-    } else if (i % 5 === 0) {
-        console.log("Buzz");
-    } else {
-        console.log(i);
-    }
-}
 
 //If you haven’t seen this before and it looks strange, it’s actually straightforward. We declare a variable i and assign it 1: the initial value of the variable i in our loop. The second clause, i <= answer is our condition. We want to loop until i is greater than answer. The third clause, i++, tells our loop to increment i by 1 every iteration. As a result, if the user inputs 10, this loop would print numbers 1 - 10 to the console.
+
+array = 5;
+console.log(sumOfTripledEvens(array))
+
+function sumOfTripledEvens(array) {
+  let sum = 0;
+  for (let i = 0; i < array.length; i++) {
+    // Step 1: If the element is an even number
+    if (array[i] % 2 === 0) {
+      // Step 2: Multiply this number by three
+      const tripleEvenNumber = array[i] * 3;
+
+      // Step 3: Add the new number to the total
+      sum += tripleEvenNumber;
+    }
+  }
+  return sum;
+}
+
+function sumOfTripledEvens(array) {
+  return array
+    .filter((num) => num % 2 === 0)
+    .map((num) => num * 3)
+    .reduce((acc, curr) => acc + curr);
+}
